@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import "./style.css"
 import { AddNewUser } from '../../components/AddNewUser';
-import api, { listUsers } from '../../services/api';
+import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
 
 import 'react-toastify/dist/ReactToastify.minimal.css';
@@ -28,7 +27,7 @@ export default function Users() {
   const [changePermissionsPopUp, setChangePermissionsPopUp] = useState(false);
   const [showAddUser, setAddUser] = useState(false);
   const [loading, setLoading] = useState(true);
-  const { user, logout, token, config, setUserRequests, users, setUsers, showMakeOpModal, setShowMakeOpModal, showPermissionsModal, setShowPermissionsModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
+  const { user, logout, token, config, setUserRequests, users, setUsers, showMakeOpModal, setShowMakeOpModal, showPermissionsModal, setShowPermissionsModal, checkedLocations, checkedSpaces } = useContext(AuthContext);
   const [role, setRole] = useState(-1);
   const [searchTerm, setSearchTerm] = useState("");
   const renderData = users.filter((item) => teste(item, role));

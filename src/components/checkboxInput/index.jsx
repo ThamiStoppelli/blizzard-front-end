@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import arrowupIcon from '../../assets/arrow-up.svg';
 import arrowdownIcon from '../../assets/arrow-down.svg';
 
-
 function CheckboxInput({
   locationId, locationName, isActive,
 

@@ -4,7 +4,6 @@ import "./style.css"
 import addIcon from '../../assets/addIcon.png';
 import spaceIcon from '../../assets/spaces.svg';
 import deleteIcon from '../../assets/trash.svg'
-import rightArrowIcon from '../../assets/right-arrow.svg'
 import previousCrumbtrailArrow from '../../assets/previousCrumbtrail.svg';
 import scheduleIcon from '../../assets/clockIcon.svg'
 
@@ -17,7 +16,7 @@ import Switch from '../../components/ToggleSwitch'
 
 export default function Spaces() {
 
-  const { logout, token, config, locations, setLocations, spaces, setSpaces, block, setBlock } = useContext(AuthContext)
+  const { logout, token, config, spaces, setSpaces, block } = useContext(AuthContext)
   const [searchTerm, setSearchTerm] = useState("");
   const [confirmName, setConfirmName] = useState("");
   const [confirmPopUp, setConfirmPopUp] = useState(false);

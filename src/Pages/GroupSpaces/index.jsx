@@ -1,22 +1,16 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import "./style.css"
 
 import NavBar from "../../components/Navbar";
-import addIcon from '../../assets/addIcon.png';
 import Header from '../../components/Header';
 import Alerts from '../../components/Alerts';
 
-import api from '../../services/api';
-import { AuthContext } from '../../contexts/auth';
 import Categories from '../../components/Categories';
-import Locations from '../../components/Locations';
 import Spaces from '../../components/Spaces';
 
 export default function GroupSpaces() {
 
-  const { initialToken, user, logout, token, config } = useContext(AuthContext)
-  const [renderCategories, setRenderCategories] = useState(true);
   const [renderLocations, setRenderLocations] = useState(false);
   
   let navigate = useNavigate()

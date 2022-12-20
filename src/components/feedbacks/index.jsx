@@ -27,7 +27,7 @@ import closeImg from '../../assets/close.svg';
 
 export const Feedback = (props) => {
     
-    const { feedbackList, position, autoDelete, autoDeleteTime } = props;
+    const { feedbackList, autoDelete, autoDeleteTime } = props;
     const [list, setList] = useState(feedbackList);
     const [text, setText] = useState("Texto do feedback")
 
@@ -50,7 +50,7 @@ export const Feedback = (props) => {
     const deleteFeedback = id => {
         const listItemIndex = list.findIndex(e => e.id === id);
         const feedbackListItem = feedbackList.findIndex(e => e.id === id);
-        list. splice(listItemIndex, 1);
+        list.splice(listItemIndex, 1);
         feedbackList.splice(feedbackListItem, 1);
         setList([...list]);
     }

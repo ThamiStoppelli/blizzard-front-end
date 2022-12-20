@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import api from "../../services/api";
+import React from "react";
 
 import Chart from "../../components/Chart";
 import DashboardCards from "../../components/InfoCards";
@@ -8,11 +7,8 @@ import { userData } from '../../dummyData'
 import Header from "../../components/Header";
 import NavBar from "../../components/Navbar";
 import Alerts from "../../components/Alerts";
-import { useEffect } from "react";
 
 export default function Dashboard() {
-
-  const [token, setToken] = useState(localStorage.getItem("token"));
 
   // const [typeUser, setTypeUser] = useState('');
   // const [NavBar, setNavBar] = useState(NavBar1);

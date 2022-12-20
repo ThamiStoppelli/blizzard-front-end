@@ -1,5 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import "./style.css";
 import closeIcon from '../../assets/close.png'
 
@@ -16,7 +15,7 @@ export const AddNewDevice = ({ onClick }) => {
   const [macAddress, setMacAddress] = useState("");
   const [category, setCategory] = useState("");
   const [location, setLocation] = useState("");
-  const { config, devices, setDevices, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
+  const { config, setDevices, setLoading } = useContext(AuthContext);
 
   const addDevice = async (field) => {
     

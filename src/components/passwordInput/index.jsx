@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import showingPassword from "../../assets/eye-open.svg";
 import hidingPassword from "../../assets/eye-closed.svg";

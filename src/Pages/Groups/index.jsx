@@ -1,21 +1,15 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
 import "./style.css"
 
 import NavBar from "../../components/Navbar";
-import addIcon from '../../assets/addIcon.png';
 import Header from '../../components/Header';
 import Alerts from '../../components/Alerts';
 
-import api from '../../services/api';
-import { AuthContext } from '../../contexts/auth';
 import Categories from '../../components/Categories';
 import Locations from '../../components/Locations';
 
 export default function Groups() {
 
-  const { initialToken, user, logout, token, config } = useContext(AuthContext)
-  const [renderCategories, setRenderCategories] = useState(true);
   const [renderLocations, setRenderLocations] = useState(false);
   
   return (

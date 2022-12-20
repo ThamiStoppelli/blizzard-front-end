@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import "./style.css";
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
 import { VisibilityPermissions } from '../../components/VisibilityPermissions';
-import Loading from '../../components/Loading';
 
 import closeIcon from '../../assets/close.png'
 import radioButton from '../../assets/radio.png';
@@ -21,11 +19,8 @@ export const AcceptUsers = ({ isOpen, onClick }) => {
   const [opId, setOpId] = useState("");
   const [radioButtonAdm, setRadioButtonAdm] = useState(radioButton);
   const [radioButtonOp, setRadioButtonOp] = useState(radioButton);
-  const { config, user, users, setUsers, userRequests, setUserRequests, permissionsModal, setPermissionsModal, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
+  const { config, user, setUsers, setUserRequests, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, checkedSpaces } = useContext(AuthContext);
   const [typeUser, setTypeUser] = useState();
-
-
-  let navigate = useNavigate();
 
   const handleAcceptUsers = async () => {
     const userId = localStorage.getItem("id");

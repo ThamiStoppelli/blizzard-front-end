@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import "./style.css"
-import api, { listUsers } from '../../services/api';
+import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
 import { AcceptUsers } from "../../components/AcceptUsers";
 
@@ -19,14 +19,6 @@ export default function UserRequests() {
 
   //criar função para obter dados dos cards
   //usar renderização condicional para gerar cada card de acordo com o tipo de alerta
-
-  const handleModal = () => {
-    if (modal == true) {
-      setModal(false)
-    } else {
-      setModal(true)
-    }
-  }
 
   async function listRequests() {
     console.log(user.typeUser, token)

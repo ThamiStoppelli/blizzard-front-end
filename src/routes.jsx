@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { Routes, Route, Navigate, useNavigate } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 import Login from "./pages/Login";
 import AboutSystem from './pages/AboutSystem';
@@ -20,8 +20,6 @@ const Paths = () => {
 
   const token = localStorage.getItem("token");
   const typeUser = localStorage.getItem("typeUser");
-
-  const navigate = useNavigate()
 
   const Private = ({ children }) => {
     const { authenticated, loading } = useContext(AuthContext);

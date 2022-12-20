@@ -5,9 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import "./style.css"
 import Logo from "../../assets/Logo.png"
 import about from "../../assets/Group7.png"
-import ClosedEyeIcon from "../../assets/eye-closed.svg"
-import EyeIcon from "../../assets/eye-open.svg"
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../components/Loading';
 import PasswordInput from '../../components/PasswordInput';
@@ -23,10 +20,6 @@ export default function Login() {
     const [emailId, setEmailId] = useState("");
     const [passwordId, setPasswordId] = useState("");
     const [togglePassword, setTogglePassword] = useState(false);
-
-    const handleTogglePassword = () => {
-        setTogglePassword(!togglePassword);
-    }; 
 
     async function HandleSubmit(field) {
         field.preventDefault()

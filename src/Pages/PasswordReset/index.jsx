@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import { toast } from 'react-toastify';
@@ -22,7 +22,6 @@ export default function PasswordReset() {
     const [confirmPasswordId, setConfirmPasswordId] = useState("");
     const [isConfirmPasswordDifferent, setIsConfirmPasswordDifferent] = useState(false);
     const [showPasswordRequirements, setShowPasswordRequirements] = useState(false)
-
 
     const handleRedefinedPassword = async (field) => {
         field.preventDefault();

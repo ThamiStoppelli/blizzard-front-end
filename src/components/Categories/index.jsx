@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
 import "./style.css"
 import addIcon from '../../assets/addIcon.png';
 import deleteIcon from '../../assets/trash.svg';
@@ -18,8 +17,6 @@ export default function Categories() {
   const [confirmPopUp, setConfirmPopUp] = useState(false);
   const [categoryName, setCategoryName] = useState("")
   const [categoryId, setCategoryId] = useState("")
-
-  let navigate = useNavigate()
 
   useEffect(() => {
     api.get(`/category/listCategory`, config).then(response => {

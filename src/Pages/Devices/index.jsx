@@ -1,10 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
 import addIcon from '../../assets/addIcon.png';
 import NavBar from "../../components/Navbar";
-import Device from "../../components/DeviceCard";
 import Header from '../../components/Header';
 import { AddNewDevice } from '../../components/AddNewDevice';
 import Alerts from '../../components/Alerts';
@@ -20,7 +18,7 @@ export default function Devices() {
 
   const [showAddDevice, setAddDevice] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false);
-  const { initialToken, user, logout, token, config, devices, setDevices, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext)
+  const { logout, token, config, devices, setDevices } = useContext(AuthContext)
   const [searchTerm, setSearchTerm] = useState("");
   const [deviceId, setDeviceId] = useState();
   const [deviceName, setDeviceName] = useState();

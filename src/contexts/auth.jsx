@@ -1,9 +1,8 @@
 import React, { useState, useEffect, createContext } from "react";
 // useEffect roda todas as vezes que a aplicação inicializa
 import { useNavigate } from "react-router-dom";
-import api, { createAuth } from "../services/api";
+import api from "../services/api";
 import { toast } from 'react-toastify';
-import Loading from "../components/Loading";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext();
@@ -121,7 +120,6 @@ export const AuthProvider = ({ children }) => {
         }
     }
     //back envia resposta, se eu nao receber resposta o serviço está indisponível
-
 
     const logout = () => {
 

@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./style.css";
 import closeIcon from '../../assets/close.png'
@@ -19,8 +18,6 @@ export const ChangePassword = ({ isOpen, onClick }) => {
   const [showPasswordRequirements, setShowPasswordRequirements] = useState(false)
   const [togglePassword, setTogglePassword] = useState(false)
   const [toggleNewPassword, setToggleNewPassword] = useState(false)
-
-  let navigate = useNavigate()
 
   const HandleChangePassword = async (field) => {
     const token = localStorage.getItem("token");

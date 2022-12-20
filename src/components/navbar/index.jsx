@@ -5,8 +5,7 @@ import { NavLink } from "react-router-dom";
 import Logo from '../../assets/Logo.png'
 
 export default function NavBar() {
-  const [Color, setColor] = useState();
-  const { token, user, initialToken, typeUser } = useContext(AuthContext)
+  const { typeUser } = useContext(AuthContext)
   const [isOperator, setIsOperator] = useState(true);
 
   useEffect(() => {

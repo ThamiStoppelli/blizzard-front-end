@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
 import Logo from "../../assets/Logo.png"
 import VortexLogo from "../../assets/VortexLogo.png" 
 import DtechLogo from "../../assets/DtecLogo.png"
-
 
 export default function AboutSystem() {
 

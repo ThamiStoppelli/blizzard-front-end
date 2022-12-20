@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import "./style.css";
 import api from "../../services/api";
 import { toast } from 'react-toastify';
@@ -22,8 +22,7 @@ function UserCard({
 }) {
 
   const [showModal, setShowModal] = useState(false);
-  const [typeUser, setTypeUser] = useState();
-  const { config, user, users, setUsers, userRequests, setUserRequests, setLoading,checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces, showMakeOpModal, setShowMakeOpModal, showPermissionsModal, setShowPermissionsModal } = useContext(AuthContext);
+  const { config, user, setUsers, setLoading,checkedLocations, checkedSpaces, showMakeOpModal, setShowMakeOpModal, showPermissionsModal, setShowPermissionsModal } = useContext(AuthContext);
 
 
   function convertType(type) {

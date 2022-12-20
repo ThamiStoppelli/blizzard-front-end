@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import "./style.css";
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
@@ -23,12 +23,7 @@ export const AddNewUser = ({ onClick }) => {
   const [opId, setOpId] = useState("");
   const [radioButtonAdm, setRadioButtonAdm] = useState(radioButton);
   const [radioButtonOp, setRadioButtonOp] = useState(radioButton);
-  const { config, user, users, setUsers, userRequests, setUserRequests, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
-  const [showPermissionsModal, setShowPermissionsModal] = useState("");
-
-  const handleShowPermissionsModal = () => {
-    setShowPermissionsModal(!showPermissionsModal);
-  };
+  const { config, user, setUsers, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, checkedSpaces } = useContext(AuthContext);
 
   const handleId = (field) => {
     if (field == "adm") {

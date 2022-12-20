@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../services/api'
 
-import feedbacks from '../../components/Feedbacks';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,14 +9,12 @@ import "./style.css"
 import Logo from "../../assets/Logo.png"
 import Loading from '../../components/Loading';
 
-
 export default function PasswordRecovery() {
 
     let navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
     const [emailId, setEmailId] = useState("");
-
 
     const handleSendEmail = async (field) => {
 

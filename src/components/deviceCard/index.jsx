@@ -1,8 +1,6 @@
-import React, { useState, useContext, useEffect } from "react";
-import api from '../../services/api';
-import moment from 'moment';
+import React, { useState, useContext } from "react";
+
 import "./style.css";
-import { toast } from 'react-toastify';
 import categoryIcon from '../../assets/ac-icon.svg';
 import locationIcon from '../../assets/locations.svg'
 import energyIcon from '../../assets/energy.svg'

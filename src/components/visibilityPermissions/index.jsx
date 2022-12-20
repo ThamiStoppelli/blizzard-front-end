@@ -1,18 +1,12 @@
-import { useNavigate } from "react-router-dom";
 import React, { useContext, useState, useEffect } from "react";
 import "./style.css";
 import closeIcon from '../../assets/close.png'
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
 
-import checkboxIcon from '../../assets/checkbox-unselected.svg';
-import checkboxSelectedIcon from '../../assets/checkbox-selected.svg';
-import checkboxPartiallySelectedIcon from '../../assets/checkbox-partially-selected.svg';
 import CheckboxInput from "../CheckboxInput";
 
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 export const VisibilityPermissions = ({
   title, buttonText, buttonPosition,
@@ -21,10 +15,8 @@ export const VisibilityPermissions = ({
 
 }) => {
 
-  const [modalIsOpen, setModalIsOpen] = useState(open);
-  const { config, locations, setLocations, setShowModalVisibility, setShowOldModal, checkedLocations, setCheckedLocations, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
+  const { config, locations, setLocations, setShowModalVisibility, setShowOldModal, checkedLocations, setCheckedLocations } = useContext(AuthContext);
 
-  const [auxCheckedLocations, setAuxCheckedLocations] = useState([]);
   //const [locationCheckboxValue, setLocationCheckboxValue] = useState(false)
   // const [isCheck, setIsCheck] = useState([]);
   const [isCheckAll, setIsCheckAll] = useState(false);

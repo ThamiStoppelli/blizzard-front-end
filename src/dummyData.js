@@ -1,7 +1,6 @@
 import deviceIcon from './assets/airconditioner-icon.png';
 import userIcon from './assets/userIcon.svg';
 
-
 export const userData = [
   {
        Hour: "06:00",

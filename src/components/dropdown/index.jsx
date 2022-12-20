@@ -4,7 +4,6 @@ import "./style.css";
 
 function DropdownFilter( { selected, setSelected } ) {
     
-    const [role, setRole] = useState("");
     const [isActive, setIsActive] = useState(false);
     const roles = ["Todos", "Gestores", "Administradores", "Operadores"];
 
