@@ -1,0 +1,176 @@
+.permissions-card {
+  z-index: 3;
+  width: 30rem;
+  background-color: white;
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2vh;
+  padding: 1.4% 1.4% 0.6%;
+  font-size: 14px;
+  font-weight: 400;
+  max-height: 90vh;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+}
+
+.scroll-area {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.permissions-card::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .addUserDiv {
+    background: lightblue;
+  }
+  /* adicionar mais divs e/ou ids, tags etc */
+}
+
+.buttons-permissions-right {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.buttons-permissions-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+
+.inputTitle {
+  font-size: 14px;
+}
+.text {
+  border-radius: 5px;
+}
+
+/* .closebtn {
+  height: 25px;
+  width: 25px;
+}
+.closebtn:hover {
+  cursor: pointer;
+} */
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #f8f8f8;
+  border-radius: 4px;
+  width: 50%;
+  height: 2rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.item-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.item-select img {
+  width: 20px;
+}
+
+.item-select label {
+  cursor: pointer;
+}
+
+#role-id {
+  border: 1px solid #2291ff;
+  background-color: #cee7ff;
+}
+
+.permissions-message {
+  background-color: #F8F8F8;
+  font-size: 12px;
+  color: #0C1B33;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.makeop-message {
+  background-color: #F8F8F8;
+  font-size: 12px;
+  color: #0C1B33;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.locations-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.locations-open-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+}
+
+.locations-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.locations-select input {
+  width: 1.4rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.locations-select label {
+  cursor: pointer;
+}
+
+.goback-button {
+  background-color: white;
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0C1B33;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

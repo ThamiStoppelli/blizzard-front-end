@@ -1,0 +1,125 @@
+cards {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  width: 50vw;
+  height: 120px;
+  background-color: #efe6dd;
+  border-radius: 8px;
+  /* gap: 50px; */
+  /* box-shadow: 0px 0px 15px -5px; */
+}
+
+/* h3 {
+  font-weight: 400;
+  width: 48.5vw;
+  word-break: break-all;
+} */
+
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 0.5vw;
+}
+
+.devices-card {
+  width: 15rem;
+  height: 13.5rem; 
+  background: #ffffff;
+  border: 1px solid #EDEDED;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.device-title {
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal-device {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 14rem;
+  justify-content: center;
+  margin: 0.5rem 0rem;
+}
+
+#modal-device {
+  margin-left: 12rem;
+  margin-bottom: 20rem;
+}
+
+#device-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 14rem;
+  min-width: 11rem;
+  padding: 1rem 0.5rem;
+}
+
+.icon-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.device-icon {
+  width: 2rem;
+  padding-left: 0.2rem;
+}
+
+.energy-icon {
+  width: 0.8rem;
+}
+
+.device-info {
+  font-size: 14px;
+}
+
+#info {
+  padding: 0.5rem 1rem 0rem;
+}
+
+#device-status {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+
+}
+
+#device-status div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 6px;
+}
+
+.schedule-device {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 6px;
+  background: #CEE7FF;
+  border-radius: 6px;
+  margin: 1rem 0.5rem 0.4rem;
+  padding: 0.3rem 0.5rem 0.2rem 0rem;
+}
+
+.schedule-device p {
+  font-size: 12px;
+  color: #0C1B33;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}

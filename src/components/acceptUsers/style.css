@@ -1,0 +1,146 @@
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+.accept-user {
+    z-index: 3;
+    width: 30vw;
+    background-color: white;
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2vh;
+    padding: 1.4% 1.4% 0.6%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-wrapper-accept {
+    border-bottom: 3px solid #F6F7FB;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.header-wrapper-accept div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper-accept a {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2rem;
+    color: #515151;
+}
+
+.header-wrapper-accept span {
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.header-wrapper-accept img {
+    cursor: pointer;
+    width: 1.6rem;
+}
+
+@media screen and (max-width: 900px) {
+    .addUserDiv {
+      background: yellow;
+    }
+    /* adicionar mais divs e/ou ids, tags etc */
+}
+
+.buttons-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.inputTitle {
+    font-size: 14px;
+}
+.text {
+    border-radius: 5px;
+}
+
+.closebtn {
+    height: 25px;
+    width: 25px;
+}
+.closebtn:hover {
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #F8F8F8;
+    border-radius: 4px;
+    width: 50%;
+    height: 2rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.item-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.item-select img {
+    width: 20px;
+}
+
+.item-select label {
+    cursor: pointer;
+}
+
+#role-id {
+    border: 1px solid #2291FF;
+    background-color: #CEE7FF;
+}
+
+.permissions-button {
+    background-color: #F8F8F8;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* margin-bottom: -0.8rem; */
+}
+
+.permissions-button label {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.permissions-button img {
+    height: 1.2rem;
+    cursor: pointer;
+}

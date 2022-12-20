@@ -1,0 +1,29 @@
+.chart {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #EDEDED;
+  width: 90%;
+  height: 50vh;
+}
+
+.chartTitle {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 50px;
+}
+
+.chartFont {
+  font-size: 14px;
+}
+
+.chartInside {
+  padding-top: 20px;
+}
+
+
+/* .chartLines {
+  text-align: left;
+} */
+
+/* aumentar altura do grafico, aprender a estilizar - rechart */

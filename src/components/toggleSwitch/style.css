@@ -1,0 +1,51 @@
+.switch {
+    display: flex;
+}
+
+.switch input {
+    display: flex;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    
+}
+
+.switch input:checked + span {
+    background-color: #f8f8f8;
+}
+
+.switch input:checked + span::before {
+    left: 1.3rem;
+    background: #14b17d;
+    /* left: calc(100%);
+    transform: translateX(-100%) */
+}
+
+.switch span {
+    display: flex;
+    cursor: pointer;
+    width: 2.6rem;
+    height: 1.2rem;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    position: relative;
+    /* transition: background-color 0.2s; */
+}
+
+.switch span::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 21px;
+    height: 21px;
+    border-radius: 21px;
+    /* transition: 0.2s; */
+    background: #808080;
+    box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+}
+
+/* .switch span:active::before {
+    width: 25px;
+} */
+
+/* -> pendente de estilizar animação */

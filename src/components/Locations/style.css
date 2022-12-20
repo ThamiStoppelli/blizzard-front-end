@@ -1,0 +1,139 @@
+.list {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   gap: 20px;
+/* display: grid;
+   column-gap: 10px;
+   grid-template-columns: 12rem 12rem 12rem 12rem;
+   grid-template-rows: 10rem 10rem 10rem 10rem; */
+}
+
+.card {
+   width: 15rem;
+   height: 12rem; 
+   background: #ffffff;
+   border: 1px solid #EDEDED;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0.8rem;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+.card-title div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.devices-amount {
+    background-color: #E8F2FC;
+    border-radius: 6px;
+    margin: 0rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: baseline;
+    padding: 0.5rem 0rem;
+}
+
+.devices-amount div{
+    margin: 0rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.devices-amount-number {
+    color: #173463;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.devices-amount-total {
+    color: #858484;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -0.4rem;
+}
+
+.devices-amount-text {
+    color: #173463;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.devices-percentage {
+    color: #173463;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0.5rem 1rem;
+    border: 1px solid #173463;
+    border-radius: 4px;
+    padding: 0rem 0.5rem;
+}
+
+.spaces-button {
+    background-color: #ffffff;
+    padding: 0rem 0.5rem 0rem 0.8rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 1rem;
+    height: 1.2rem;
+}
+
+.spaces-button p {
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    font-weight: 400;
+}
+
+.spaces-button img {
+    width: 1rem;
+}
+
+.status-bar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 12px;
+    gap: 6px;
+    background: #D5F6EB;
+    border-radius: 6px;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0rem;
+}
+.status-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.card-name {
+    font-size: 14px;
+    font-weight: 500;
+}

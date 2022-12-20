@@ -1,0 +1,20 @@
+.spaces-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+.spaces-select input {
+    width: 1.4rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.spaces-select label {
+  cursor: pointer;
+}

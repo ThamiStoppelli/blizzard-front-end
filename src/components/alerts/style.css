@@ -1,0 +1,40 @@
+.alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.alertCard {
+    width: 14rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    padding: 0.6rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #CEE7FF;
+}
+
+.alertText {
+    color: #121212;
+    font-size: 12px;
+}
+
+.time {
+    display: flex;
+    align-self: flex-end;
+    font-size: 10px;
+    color: #858484;
+    font-weight: 500;
+}
+
+.alertIcon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.alertsTitle {
+    font-size: 20px;
+    font-weight: 500;
+}

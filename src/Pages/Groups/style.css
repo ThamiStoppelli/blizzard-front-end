@@ -1,0 +1,52 @@
+.deviceList{
+    flex: 4;
+}
+
+.deviceListItem{
+    display: flex;
+    align-items: center;
+}
+
+.deviceListImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+.deviceListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.deviceListDelete{
+    color: red;
+    cursor: pointer;
+}
+
+.addIcon {
+    height: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
+
+.grupos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.header-grupos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

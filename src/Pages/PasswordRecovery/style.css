@@ -1,0 +1,42 @@
+.login-form {
+  width: 100%;
+}
+
+.form-title {
+  font-size: 18px;
+  line-height: 1.2;
+  display: flex;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-text{
+  font-size: 11px;
+  line-height: 1.5;
+  display: flex;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+#recovery-button {
+  margin-top: 6em;
+}
+
+.recovery-button:hover {
+  cursor: pointer;
+  background-color: #173463;
+}
+
+#recovery {
+  height: 16rem;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

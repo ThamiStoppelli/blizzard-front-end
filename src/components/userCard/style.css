@@ -1,0 +1,140 @@
+.users-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 2rem 0.5rem 0rem;
+    padding: 0.4rem;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    /* max-height: 10px; */
+}
+  
+.users-card p {
+    margin-right: 2rem;
+    /* width: 30%; */
+    font-weight: 400;
+}
+
+#user-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    min-width: 11rem;
+}
+  
+#user-email {
+    width: 80%;
+    min-width: 11rem;
+}
+
+#user-role {
+    background: #F8F8F8;
+    border-radius: 8px;
+    padding: 4px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0C1B33;
+    min-width: 3rem;
+}
+
+.user-role {
+    display: flex;
+    margin-right: 2rem;
+    background: #ffffff;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.info-dots {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    /* position: relative;
+    z-index: -1; */
+}
+  
+.modal-adm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 280px;
+    margin: 0.5rem 0rem;
+}
+
+.modal-op {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+}
+  
+.container-modal {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0px 2px 4px hsla(0, 0%, 15%, 0.171); */
+    margin-left: -3.2rem;
+}
+
+.container-modal p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #858484;
+    margin: 0rem 0.5rem 0rem 3rem;
+}
+
+.blank-div {
+    width: 3.5rem;
+}
+
+.text-modal {
+    font-weight: 400;
+    font-size: 15px;
+}
+  
+.modal-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+  
+.modal-button:hover {
+    cursor: pointer;
+}
+
+.popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    padding: 5px;
+}
+.popup-arrow {
+    color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+    width: 200px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px; */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+}
+  
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+    background: transparent;
+}
+
+#delete-user {
+    color: #F00F14;
+}

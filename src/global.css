@@ -1,0 +1,96 @@
+/* .Toastify__toast-container {
+    --toastify-toast-width: 200px;
+} */
+
+/* .toast-style {
+    --toastify-color-light: #D6E2F5;
+    --toastify-color-success: #0C1B33;
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-text-color-light: #0C1B33;
+} */
+
+.success-toast{
+    --toastify-color-light: #D6E2F5;
+    --toastify-color-success: #0C1B33;
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-text-color-light: #0C1B33;
+}
+
+.error-toast{
+    --toastify-color-light: #FFC1C3;
+    --toastify-color-error: #F00F14;
+    --toastify-icon-color-error: var(--toastify-color-error);
+    --toastify-color-progress-error: var(--toastify-color-error);
+    --toastify-text-color-light: #0C1B33;
+}
+
+.container{
+    display: flex;
+    /* margin-top: 10px; */
+}
+
+.List{
+    flex: 4;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.search{
+    margin-bottom: 1.8rem;
+    width: 24rem;
+    border-radius: 8px ;
+    border:  2px solid #D9D9D9;
+    padding-left: 1.8rem;
+    margin-left: 1px;
+    height: 1.8rem;
+    font-size: 14px;
+    background-image: url('./Assets/SearchIcon.png');
+    background-position: 8px;
+    background-repeat: no-repeat ;
+    background-size: 14px;
+}
+.search:focus{
+    border: 2px solid #0080FF;
+    border-radius: 8px;
+    outline: none;
+}
+
+.addButton{
+    width: 260px;
+    border-radius: 8px ;
+    margin-bottom: 20px;
+    background-color:#0C1B33 ;
+    color: white;
+    font-size: 14px;
+    min-height: 45px ;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton:hover {
+    background-color:#173463 ;
+}
+
+.Toastify__toast-body {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* .Toastify .Toastify__toast-container--top-right .Toastify__toast-body{  font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+  } */
+
+label {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}

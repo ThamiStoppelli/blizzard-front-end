@@ -1,0 +1,30 @@
+#names-title {
+  margin-top: 0.5rem;
+}
+
+.names{
+  flex-direction: column;
+}
+
+.names p {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.companyLogos {
+  display: flex;
+  flex-direction: row;
+  top:115px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.companyLogos img{
+  width: 11rem;
+}
+
+#goBack-button {
+  margin-top: 0rem;
+}

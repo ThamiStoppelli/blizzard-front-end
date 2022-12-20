@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    flex: row;
+}
+
+.content {
+    width: 80%;
+}
+
+.elements-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+}

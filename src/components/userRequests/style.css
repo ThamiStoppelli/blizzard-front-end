@@ -1,0 +1,65 @@
+.request-card {
+    width: 20rem;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+
+}
+
+.request-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-name {
+    font-size: 16px;
+    width: 180px;
+    line-break: anywhere;
+    font-weight: 400;
+}
+
+.request-email {
+    font-size: 12px;
+    color: #515151;
+    font-weight: 300;
+    width: 180px;
+    line-break: anywhere;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #858484;
+    margin-right: 12px;
+    height: 80px;
+    font-weight: 500;
+}
+
+.user-icon {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+.request-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.request-buttons {
+    height: 30px;
+}
+
+#request-list-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

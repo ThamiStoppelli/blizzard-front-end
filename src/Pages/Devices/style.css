@@ -1,0 +1,52 @@
+.organizeList {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    margin-right: 1.5rem;
+}
+
+.addIcon {
+    height: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
+
+.organizeHorizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.select-devices {
+    margin-bottom: 30px;
+    border: 2px solid #d9d9d9;
+    /* width: 9rem; */
+    cursor: pointer;
+    height: 2.2rem;
+    outline-color:#d9d9d9
+  }
+  .select-devices:focus {
+    cursor: pointer;
+  }
+  .select-devices:hover {
+    cursor: pointer;
+  }
+
+
+  #select-category {
+    width: 4.5rem;
+    font-size: 14px;
+  }
+
+  #select-location {
+    width: 5rem;
+    font-size: 14px;
+  }
+
+  #select-status {
+    width: 8rem;
+    font-size: 14px;
+  }

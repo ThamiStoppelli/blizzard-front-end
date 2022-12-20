@@ -1,0 +1,42 @@
+.dashboardCards {
+  /* width: 65rem; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.cards {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #E8F2FC; 
+}
+
+.contentCard{
+    align-items: flex-start;
+}
+
+.dataTitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.number{
+    font-size: 18px;
+    font-weight: 400;
+    color:
+    #173463;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #858484;
+}
+
+.arrowIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}

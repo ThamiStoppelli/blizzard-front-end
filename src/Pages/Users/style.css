@@ -1,0 +1,170 @@
+.userList {
+  flex: 4;
+  height: 7rem;
+}
+
+.userListItem {
+  display: flex;
+  align-items: center;
+}
+
+.userListImg {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.addIcon {
+  height: 15px;
+  width: 15px;
+  padding-right: 10px;
+}
+
+.search-area {
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.select-role {
+  margin-bottom: 30px;
+  border: 2px solid #d9d9d9;
+  width: 11rem;
+  cursor: pointer;
+  height: 2.2rem;
+  outline-color:#d9d9d9;
+}
+
+.select-role:focus {
+  cursor: pointer;
+}
+.select-role:hover {
+  /* outline-color: #2291FF transparent transparent transparent; */
+  cursor: pointer;
+}
+
+#select-role {
+  font-size: 14px;
+}
+
+fieldset{
+  border: none !important;
+  outline: none !important;
+}
+
+.no-users {
+  font-weight: 400;
+  margin: 4rem;
+}
+
+.requests {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.requests-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.requests h5 {
+  color: #0c1b33;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.requests-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#deny-button {
+  width: 4rem;
+}
+
+.text-deny-popup {
+  font-size: 12px;
+  line-height: 1.2rem;
+  margin-bottom: 0rem;
+}
+
+#deny-all {
+  height: 10.5rem;
+  border-radius: 6px;
+}
+
+#delete {
+  height: 10.5rem;
+  border-radius: 6px;
+  width: 18rem;
+}
+
+.textarea-popup .deny-title {
+  margin-bottom: 0.8rem;
+}
+
+.users-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 2rem 0.5rem 0rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+}
+
+.users-header p {
+  /* width: 80%; */
+  margin-right: 2rem;
+  width: 80%;
+  min-width: 4rem;
+  font-weight: 600;
+}
+
+#header-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 75%;
+  min-width: 3rem;
+  font-weight: 600;
+}
+
+#header-email {
+  width: 80%;
+  min-width: 11rem;
+}
+
+#makeop-button {
+  width: 5rem;
+  height: 2.4rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#changepermissions-button {
+  width: 4rem;
+  height: 2.4rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.text-popup {
+  font-size: 12px;
+  margin: 1.2rem 1.6rem 0.2rem 1.2rem;
+}
