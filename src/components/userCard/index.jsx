@@ -59,7 +59,7 @@ function UserCard({
 
     const managerId = user._id
 
-    if(role == 2) {
+    if(role === 2) {
 
       const updateTypeUser = {
         updateUserId: id,
@@ -90,7 +90,7 @@ function UserCard({
         setLoading(false);
         toast.error(`${err.response.data.err}`, { className: "error-toast" })
       })
-    } else if (role == 1) {
+    } else if (role === 1) {
       
       const updateTypeUser = {
         updateUserId: id,
@@ -152,7 +152,7 @@ function UserCard({
         <p id='user-role'> {convertType(role)} </p>
       </div>
 
-      {role != 0 ?
+      {role !==0 ?
         <Popup
           trigger={<div className='info-dots'><img src={DotsIcon} onClick={() => {
             setTableUserId(id);
@@ -169,7 +169,7 @@ function UserCard({
           arrow={false}
         >
 
-          {showModal && (role == 1) ?
+          {showModal && (role === 1) ?
             (
               <div className="container-modal">
                 <div className="modal-adm">
@@ -194,7 +194,7 @@ function UserCard({
             : null
           }
 
-          {showModal && (role == 2) ?
+          {showModal && (role === 2) ?
             (
               <div className="container-modal">
                 <div className="modal-op">

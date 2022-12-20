@@ -60,7 +60,7 @@ function DeviceCard({
   //           localization: localization
   //       };
 
-  //       if(updatedData.name == '' || updatedData.category == '' || updatedData.mac == '' ||updatedData.localization =='') {
+  //       if(updatedData.name === '' || updatedData.category === '' || updatedData.mac === '' ||updatedData.localization =='') {
   //           toast.error("Preencha os campos obrigatórios para cadastrar", {className:"error-toast"});
   //       } else {
 

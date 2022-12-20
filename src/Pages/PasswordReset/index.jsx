@@ -54,19 +54,19 @@ export default function PasswordReset() {
                 }
             } catch (error) {
                 console.log(error);
-                if (error.response.status == 404 || !error.response.status) {
+                if (error.response.status === 404 || !error.response.status) {
                     console.log(error)
                     toast.error("Ocorreu um erro de conexão ao serviço", { className: "error-toast" });
 
-                } else if (password != confirmPassword) {
+                } else if (password !==confirmPassword) {
                     toast.error("As senhas não são iguais", { className: "error-toast" })
                     console.log(error)
 
-                } else if (error.response.status == 422) {
+                } else if (error.response.status === 422) {
                     toast.error("Link expirado. Solicite envio da recuperação de senha novamente", { className: "error-toast" })
                     console.log(error)
 
-                } else if (error.response.status == 411) {
+                } else if (error.response.status === 411) {
                     toast.error("A senha deve ter no mínimo 8 caracteres", { className: "error-toast" })
                     console.log(error)
                     setPasswordId('different');
@@ -87,16 +87,16 @@ export default function PasswordReset() {
 
     useEffect(() => {
 
-        if (password != undefined || confirmPassword != undefined) {
+        if (password !==undefined || confirmPassword !==undefined) {
 
             setShowPasswordRequirements(true);
 
-            if (password != "" || confirmPassword != "") {
+            if (password !=="" || confirmPassword !=="") {
     
                 if (password.length >= 8 && confirmPassword.length >= 8) {
                     setShowPasswordRequirements(false);
     
-                    if (password == confirmPassword) {
+                    if (password === confirmPassword) {
                         setIsConfirmPasswordDifferent(false);
                         setPasswordId('');
                         setConfirmPasswordId('');
@@ -120,7 +120,7 @@ export default function PasswordReset() {
 
                     if (password.length < 8) {
                         setPasswordId('input-error');
-                        if (password == "") {
+                        if (password === "") {
                           setPasswordId('');
                         }
                       } else {
@@ -128,7 +128,7 @@ export default function PasswordReset() {
                       }
                       if (confirmPassword.length < 8) {
                         setConfirmPasswordId('input-error');
-                        if (confirmPassword == "") {
+                        if (confirmPassword === "") {
                           setConfirmPasswordId('');
                         }
                       } else {

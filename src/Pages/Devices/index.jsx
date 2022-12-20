@@ -149,7 +149,7 @@ export default function Devices() {
               }
               return 0;
             }).filter((event) => {
-              if (searchTerm == "") {
+              if (searchTerm === "") {
                 return event
               } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
                 return event

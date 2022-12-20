@@ -39,7 +39,7 @@ export default function Users() {
 
 
   function teste(item, role) {
-    if (item.typeUser == role) {
+    if (item.typeUser === role) {
       return true
     }
     return false
@@ -156,7 +156,7 @@ export default function Users() {
 
     const managerId = user._id
 
-    if (tableUserRole == 2) {
+    if (tableUserRole === 2) {
 
       const updateTypeUser = {
         updateUserId: tableUserId,
@@ -187,7 +187,7 @@ export default function Users() {
         setLoading(false);
         toast.error(`${err.response.data.err}`, { className: "error-toast" })
       })
-    } else if (tableUserRole == 1) {
+    } else if (tableUserRole === 1) {
 
       const updateTypeUser = {
         updateUserId: tableUserId,
@@ -273,7 +273,7 @@ export default function Users() {
     }
 
     return function (a, b) {
-      if (sortOrder == -1) {
+      if (sortOrder === -1) {
         return b[event].localeCompare(a[event]);
       } else {
         return a[event].localeCompare(b[event]);
@@ -296,10 +296,10 @@ export default function Users() {
   }
 
   function handleListOrder() {
-    if (listOrder == 'name') {
+    if (listOrder === 'name') {
       setListOrder('-name');
       setArrowIcon(upArrowIcon);
-    } else if (listOrder == '-name') {
+    } else if (listOrder === '-name') {
       setListOrder('name')
       setArrowIcon(downArrowIcon);
     }
@@ -364,7 +364,7 @@ export default function Users() {
               />
             )}
 
-            {renderData.length === 0 && role != -1 ?
+            {renderData.length === 0 && role !==-1 ?
 
               <p className='no-users'>Não existem {convertType(role).toLowerCase()}es.</p> :
               <div>
@@ -378,9 +378,9 @@ export default function Users() {
                   <div className='blank-div' />
                 </div>
 
-                {role != -1 ?
+                {role !==-1 ?
                   renderData.sort(dynamicSort(listOrder)).filter((event) => {
-                    if (searchTerm == "") {
+                    if (searchTerm === "") {
                       return event
                     } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
                       return event
@@ -402,7 +402,7 @@ export default function Users() {
                     />
                   )) :
                   users.sort(dynamicSort(listOrder)).filter((event) => {
-                    if (searchTerm == "") {
+                    if (searchTerm === "") {
                       return event
                     } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
                       return event

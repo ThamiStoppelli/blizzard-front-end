@@ -42,19 +42,19 @@ export const ChangePassword = ({ isOpen, onClick }) => {
       }
     } catch (error) {
       console.log(error);
-      if (error.response.status == 422) {
+      if (error.response.status === 422) {
         toast.error("A senha atual está incorreta", {className:"error-toast"});
         setConfirmPopUp(false);
         setPasswordId('password-input-error');
         setModalIsOpen(isOpen);
 
-      } else if (password == newPassword) {
+      } else if (password === newPassword) {
         toast.error("A nova senha deve ser diferente da senha atual", {className:"error-toast"});
         setConfirmPopUp(false);
         setNewPasswordId('password-input-error');
         setModalIsOpen(isOpen);
 
-      } else if (error.response.status == 411) {
+      } else if (error.response.status === 411) {
         toast.error("A senha deve ter no mínimo 8 caracteres", {className:"error-toast"});
         setConfirmPopUp(false);
         setNewPasswordId('password-input-error');
@@ -105,12 +105,12 @@ export const ChangePassword = ({ isOpen, onClick }) => {
   }
 
   useEffect(() => {
-    if (password != undefined) {
+    if (password !==undefined) {
 
       if (password.length < 8) {
         setShowPasswordRequirements(true);
         setPasswordId('input-error');
-        if (password == "") {
+        if (password === "") {
           setShowPasswordRequirements(true);
           setPasswordId('');
         }
@@ -121,7 +121,7 @@ export const ChangePassword = ({ isOpen, onClick }) => {
       if (newPassword.length < 8) {
         setShowPasswordRequirements(true);
         setNewPasswordId('input-error');
-        if (newPassword == "") {
+        if (newPassword === "") {
           setShowPasswordRequirements(true);
           setNewPasswordId('');
         }

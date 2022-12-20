@@ -63,7 +63,7 @@ export default function DropdownVariavel({
           );
           if (checkboxes3.length !== 0) {
             for (let i = 0; i < checkboxes3.length; i++) {
-              //if (checkboxes3[i].id != "corruptions index") {
+              //if (checkboxes3[i].id !=="corruptions index") {
               listaAux.push(checkboxes3[i].id);
 
               // }

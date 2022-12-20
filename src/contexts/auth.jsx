@@ -103,7 +103,7 @@ export const AuthProvider = ({ children }) => {
     
             }).catch(function (error) {
     
-                if(error.response.status == 404 || !error.response.status) {
+                if(error.response.status === 404 || !error.response.status) {
                     toast.error("Ocorreu um erro de conexão ao serviço", {className:"error-toast"});
                     setLoading(false);
                     // console.log(error.response.status)

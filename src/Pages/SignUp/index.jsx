@@ -36,12 +36,6 @@ export default function SignUp() {
         // console.log(password)
     }
 
-    function handlePassword() {
-        newData.password = password;
-        console.log(data.password)
-        console.log(password)
-    }
-
     function handleSubmit(field) {
         field.preventDefault();
 
@@ -99,19 +93,19 @@ export default function SignUp() {
                 toast.success("Cadastro solicitado com sucesso", {className:"success-toast"});
 
             }).catch(function (error) {
-                if (error.response.status == 409) {
+                if (error.response.status === 409) {
                     toast.error("Já existe cadastro com esse e-mail", {className:"error-toast"});
                     setNameId('');
                     setEmailId('input-error');
                     setPasswordId('');
 
-                } else if (error.response.status == 411) {
+                } else if (error.response.status === 411) {
                     toast.error("A senha deve ter no mínimo 8 caracteres", {className:"error-toast"});
                     setNameId('');
                     setEmailId('');
                     setPasswordId('input-error');
 
-                } else if (error.response.status == 422) {
+                } else if (error.response.status === 422) {
                     toast.error("Preencha todos os campos para solicitar cadastro", {className:"error-toast"});
 
                 } else {
@@ -132,12 +126,12 @@ export default function SignUp() {
 
     useEffect(() => {
 
-        if (password != undefined) {
+        if (password !==undefined) {
 
             if (password.length < 8) {
                 setShowPasswordRequirements(true);
                 setPasswordId('input-error');
-                if (password == "") {
+                if (password === "") {
                     setShowPasswordRequirements(true);
                     setPasswordId('');
                 }

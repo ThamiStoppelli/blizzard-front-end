@@ -50,7 +50,7 @@ export default function Spaces() {
 
   const handleDeleteSpaces = async (id, name) => {
 
-    if (confirmName == spaceName) {
+    if (confirmName === spaceName) {
       await api.delete(`/spaces/delete/${id}`, config).then(res => {
         console.log(res.data);
         toast.success(`Localização ${capitalizeFirstLetter(name)} excluída`, { className: "success-toast" })
@@ -81,7 +81,7 @@ export default function Spaces() {
   };
 
   function activateButton() {
-    if (confirmName == spaceName) {
+    if (confirmName === spaceName) {
       return false;
     } else {
       return true;
@@ -149,7 +149,7 @@ export default function Spaces() {
           }
           return 0;
         }).filter((event) => {
-          if (searchTerm == "") {
+          if (searchTerm === "") {
             return event
           } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
             return event

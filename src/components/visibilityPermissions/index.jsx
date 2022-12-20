@@ -85,7 +85,7 @@ export const VisibilityPermissions = ({
     }
 
     return function (a, b) {
-      if (sortOrder == -1) {
+      if (sortOrder === -1) {
         return b[event].localeCompare(a[event]);
       } else {
         return a[event].localeCompare(b[event]);

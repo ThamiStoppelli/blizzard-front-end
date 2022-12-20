@@ -18,7 +18,7 @@ export default function Header({ title }) {
   const { logout } = useContext(AuthContext);
 
   const handleModal = () => {
-    if (modal == true) {
+    if (modal === true) {
       setModal(false)
     } else {
       setModal(true)

@@ -57,7 +57,7 @@ export const AcceptUsers = ({ isOpen, onClick }) => {
       })
 
     }).catch((err) => {
-      if(user.typeUser != 0) {
+      if(user.typeUser !==0) {
         console.log(err)
         setLoading(false);
         toast.error("Você não possui autorização para confirmar solicitação de cadastro", {className:"error-toast"}) 
@@ -75,7 +75,7 @@ export const AcceptUsers = ({ isOpen, onClick }) => {
 
 
   const handleId = (field) => {
-    if (field == "adm") {
+    if (field === "adm") {
       setAdmId('role-id');
       setOpId('');
       setRadioButtonAdm(radioButtonChecked)
@@ -84,7 +84,7 @@ export const AcceptUsers = ({ isOpen, onClick }) => {
       console.log("adm")
       setPermissions(false)
 
-    } else if (field == "op") {
+    } else if (field === "op") {
       setAdmId('');
       setOpId('role-id');
       setRadioButtonAdm(radioButton)

@@ -37,7 +37,7 @@ const Paths = () => {
   //   if(!token){ navigate("/")}
   // }, [token])
 
-  // (typeUser == 0 || typeUser == 1) ? <Navigate to="/dashboard" /> :
+  // (typeUser === 0 || typeUser === 1) ? <Navigate to="/dashboard" /> :
   
   return (
     <AuthProvider>
@@ -53,10 +53,10 @@ const Paths = () => {
         <Route path="/sobre/autenticado" element={<Private> <AboutSystemLoggedIn /> </Private>} />
         <Route path="/dashboard" element={<Private> <Dashboard /> </Private>} />
         <Route path="/aparelhos" element={<Private> <Devices /> </Private>} />
-        <Route path="/grupos" element={(typeUser == 0 || typeUser == 1) ? <Groups /> : <Navigate to="/dashboard" /> } />
-        <Route path="/usuarios" element={(typeUser == 0 || typeUser == 1) ? <Users /> : <Navigate to="/dashboard" /> } />
+        <Route path="/grupos" element={(typeUser === 0 || typeUser === 1) ? <Groups /> : <Navigate to="/dashboard" /> } />
+        <Route path="/usuarios" element={(typeUser === 0 || typeUser === 1) ? <Users /> : <Navigate to="/dashboard" /> } />
 
-        <Route path="/grupos/espacos" element={(typeUser == 0 || typeUser == 1) ? <GroupSpaces /> : <Navigate to="/dashboard" />} />
+        <Route path="/grupos/espacos" element={(typeUser === 0 || typeUser === 1) ? <GroupSpaces /> : <Navigate to="/dashboard" />} />
 
         
         <Route path="*" element={ !!token ? <Navigate to="/dashboard" /> : <Navigate to="/" /> } />

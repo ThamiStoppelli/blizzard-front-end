@@ -36,7 +36,7 @@ function CheckboxInput({
     }
 
     return function (a, b) {
-      if (sortOrder == -1) {
+      if (sortOrder === -1) {
         return b[event].localeCompare(a[event]);
       } else {
         return a[event].localeCompare(b[event]);
@@ -52,7 +52,7 @@ function CheckboxInput({
       console.log(response.data.OK)
       setNoSpaces(false);
 
-      if (response.data.OK.length == 0) {
+      if (response.data.OK.length === 0) {
         setNoSpaces(true);
       } else {
         setSpaces(response.data.OK);

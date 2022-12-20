@@ -38,7 +38,7 @@ export default function Categories() {
 
   const handleDeleteCategory = async (id, name) => {
 
-    if (confirmName == categoryName) {
+    if (confirmName === categoryName) {
       await api.delete(`/category/delete/${id}`, config).then(res => {
         console.log(res.data);
         toast.success(`Categoria ${capitalizeFirstLetter(name)} excluída`, { className: "success-toast" })
@@ -66,7 +66,7 @@ export default function Categories() {
   };
 
   function activateButton() {
-    if (confirmName == categoryName) {
+    if (confirmName === categoryName) {
       return false;
     } else {
       return true;
@@ -119,7 +119,7 @@ export default function Categories() {
           }
           return 0;
         }).filter((event) => {
-          if (searchTerm == "") {
+          if (searchTerm === "") {
             return event
           } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
             return event

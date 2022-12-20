@@ -30,7 +30,7 @@ export default function PasswordRecovery() {
             api.post("/auth/forgotPassword", {
                 email: email,
             }).then(function (response) {
-                if(response.status == 200) {
+                if(response.status === 200) {
                     setLoading(false);
                     console.log(response)
                     navigate('/') 
@@ -38,7 +38,7 @@ export default function PasswordRecovery() {
                 }
                 }).catch(function (error) {
 
-                if(error.response.status == 404 || !error.response.status) {
+                if(error.response.status === 404 || !error.response.status) {
                     setLoading(false);
                     console.log(error)
                     toast.error("Ocorreu um erro de conexão ao serviço", {className:"error-toast"});

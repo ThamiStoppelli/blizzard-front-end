@@ -26,7 +26,7 @@ export const AddNewUser = ({ onClick }) => {
   const { config, user, setUsers, loading, setLoading, showModalVisibility, setShowModalVisibility, showOldModal, setShowOldModal, checkedLocations, checkedSpaces } = useContext(AuthContext);
 
   const handleId = (field) => {
-    if (field == "adm") {
+    if (field === "adm") {
       setAdmId('role-id');
       setOpId('');
       setRadioButtonAdm(radioButtonChecked)
@@ -35,7 +35,7 @@ export const AddNewUser = ({ onClick }) => {
       setPermissions(false)
       setTypeUser(1);
 
-    } else if (field == "op") {
+    } else if (field === "op") {
       setAdmId('');
       setOpId('role-id');
       setRadioButtonAdm(radioButton)

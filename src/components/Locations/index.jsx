@@ -41,7 +41,7 @@ export default function Locations() {
 
   const handleDeleteLocations = async (id, name) => {
 
-    if (confirmName == locationName) {
+    if (confirmName === locationName) {
       await api.delete(`/blocks/delete/${id}`, config).then(res => {
         console.log(res.data);
         toast.success(`Localização ${capitalizeFirstLetter(name)} excluída`, { className: "success-toast" })
@@ -69,7 +69,7 @@ export default function Locations() {
   };
 
   function activateButton() {
-    if (confirmName == locationName) {
+    if (confirmName === locationName) {
       return false;
     } else {
       return true;
@@ -122,7 +122,7 @@ export default function Locations() {
           }
           return 0;
         }).filter((event) => {
-          if (searchTerm == "") {
+          if (searchTerm === "") {
             return event
           } else if (replaceSpecialChars(event.name.toLowerCase()).includes(replaceSpecialChars(searchTerm.toLowerCase()))) {
             return event

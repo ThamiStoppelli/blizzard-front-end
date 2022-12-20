@@ -18,9 +18,9 @@ export default function Dashboard() {
   //   localStorage.getItem("typeUser", res.typeUser);
   //   setTypeUser(res.typeUser);
 
-  //   if (typeUser == '0' || typeUser == '1') {
+  //   if (typeUser === '0' || typeUser === '1') {
   //     setNavBar(NavBar1); 
-  //   } else if (typeUser == '2' ) {
+  //   } else if (typeUser === '2' ) {
   //     setNavBar(NavBar2);
   //   }
   // }, []);
