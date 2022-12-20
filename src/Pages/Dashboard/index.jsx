@@ -1,12 +1,13 @@
 import React from "react";
 
-import Chart from "../../components/Chart";
-import DashboardCards from "../../components/InfoCards";
-import "./style.css";
 import { userData } from '../../dummyData'
+import DashboardCards from "../../components/InfoCards";
+import Chart from "../../components/Chart";
 import Header from "../../components/Header";
 import NavBar from "../../components/Navbar";
 import Alerts from "../../components/Alerts";
+
+import "./style.css";
 
 export default function Dashboard() {
 

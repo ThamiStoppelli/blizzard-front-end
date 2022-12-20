@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
+import Popup from 'reactjs-popup';
 
-import "./style.css";
 import categoryIcon from '../../assets/ac-icon.svg';
 import locationIcon from '../../assets/locations.svg'
 import energyIcon from '../../assets/energy.svg'
@@ -9,10 +9,10 @@ import deleteIcon from '../../assets/trash.svg';
 import deactivateIcon from '../../assets/deactivate.svg';
 import editIcon from '../../assets/edit.svg'
 import arrowIcon from '../../assets/arrow-schedule.svg'
-
-import Popup from 'reactjs-popup';
 import { AuthContext } from '../../contexts/auth';
-import Switch from '../../components/ToggleSwitch'
+import Switch from '../ToggleSwitch'
+
+import "./style.css";
 
 function DeviceCard({
   key, name, id, location, space,

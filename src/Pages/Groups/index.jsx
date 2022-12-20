@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import "./style.css"
 
 import NavBar from "../../components/Navbar";
 import Header from '../../components/Header';
 import Alerts from '../../components/Alerts';
-
 import Categories from '../../components/Categories';
 import Locations from '../../components/Locations';
+
+import "./style.css"
 
 export default function Groups() {
 

@@ -1,13 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react';
-import "./style.css"
-import api from '../../services/api';
-import { AuthContext } from '../../contexts/auth';
-import { AcceptUsers } from "../../components/AcceptUsers";
+import { toast } from 'react-toastify';
 
 import negativeIcon from '../../assets/negative.png';
 import positiveIcon from '../../assets/positive.png';
 import userIcon from '../../assets/userIcon.png';
-import { toast } from 'react-toastify';
+import api from '../../services/api';
+import { AuthContext } from '../../contexts/auth';
+import { AcceptUsers } from "../../components/AcceptUsers";
+
+import "./style.css"
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function UserRequests() {

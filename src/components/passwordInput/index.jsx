@@ -1,7 +1,9 @@
 import React from "react";
-import "./style.css";
+
 import showingPassword from "../../assets/eye-open.svg";
 import hidingPassword from "../../assets/eye-closed.svg";
+
+import "./style.css";
 
 function PasswordInput({
   toggle, setToggle, setInput, id,

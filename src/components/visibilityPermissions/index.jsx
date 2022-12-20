@@ -1,11 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
-import "./style.css";
+
 import closeIcon from '../../assets/close.png'
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
 
 import CheckboxInput from "../CheckboxInput";
 
+import "./style.css";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const VisibilityPermissions = ({

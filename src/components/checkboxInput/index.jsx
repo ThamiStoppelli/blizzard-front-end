@@ -1,11 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
-import "./style.css";
-import { AuthContext } from '../../contexts/auth';
-import api from "../../services/api";
-import { toast } from 'react-toastify';
 
+import api from "../../services/api";
+import { AuthContext } from '../../contexts/auth';
 import arrowupIcon from '../../assets/arrow-up.svg';
 import arrowdownIcon from '../../assets/arrow-down.svg';
+
+import "./style.css";
 
 function CheckboxInput({
   locationId, locationName, isActive,
@@ -14,7 +14,7 @@ function CheckboxInput({
   const [showSpaces, setShowSpaces] = useState(false);
   const [dropdownButton, setDropdownButton] = useState(arrowdownIcon);
   const [block, setBlock] = useState("");
-  const { config, spaces, setSpaces, checkedSpaces, setCheckedSpaces, checkedLocations, setCheckedLocations } = useContext(AuthContext);
+  const { config, spaces, setSpaces, checkedSpaces, setCheckedSpaces } = useContext(AuthContext);
   const [NoSpaces, setNoSpaces] = useState(false);
 
   const [isCheckBlock, setIsCheckBlock] = useState(false);

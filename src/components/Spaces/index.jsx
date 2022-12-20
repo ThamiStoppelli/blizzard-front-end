@@ -1,18 +1,18 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
-import "./style.css"
+import { toast } from 'react-toastify';
+
 import addIcon from '../../assets/addIcon.png';
 import spaceIcon from '../../assets/spaces.svg';
 import deleteIcon from '../../assets/trash.svg'
 import previousCrumbtrailArrow from '../../assets/previousCrumbtrail.svg';
 import scheduleIcon from '../../assets/clockIcon.svg'
-
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
-import { toast } from 'react-toastify';
-import DeleteModal from '../../components/DeleteModal';
-import Switch from '../../components/ToggleSwitch'
+import DeleteModal from '../DeleteModal';
+import Switch from '../ToggleSwitch'
 
+import "./style.css"
 
 export default function Spaces() {
 

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../../services/api'
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+import api from '../../services/api'
 import PasswordInput from '../../components/PasswordInput';
+import Logo from "../../assets/Logo.png"
 
 import "./style.css"
-import Logo from "../../assets/Logo.png"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function SignUp() {
 

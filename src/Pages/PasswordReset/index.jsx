@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../../services/api';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import PasswordInput from '../../components/PasswordInput';
 
-import "./style.css"
+import api from '../../services/api';
+import PasswordInput from '../../components/PasswordInput';
 import Logo from "../../assets/Logo.png"
 
+import "./style.css"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function PasswordReset() {
 

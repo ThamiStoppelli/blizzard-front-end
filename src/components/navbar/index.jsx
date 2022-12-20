@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { AuthContext } from '../../contexts/auth';
-import "./style.css";
 import { NavLink } from "react-router-dom";
+
 import Logo from '../../assets/Logo.png'
+import { AuthContext } from '../../contexts/auth';
+
+import "./style.css";
 
 export default function NavBar() {
   const { typeUser } = useContext(AuthContext)

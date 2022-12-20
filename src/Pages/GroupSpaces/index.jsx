@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
-import "./style.css"
 
 import NavBar from "../../components/Navbar";
 import Header from '../../components/Header';
 import Alerts from '../../components/Alerts';
-
 import Categories from '../../components/Categories';
 import Spaces from '../../components/Spaces';
+
+import "./style.css"
 
 export default function GroupSpaces() {
 

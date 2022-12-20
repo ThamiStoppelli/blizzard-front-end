@@ -1,8 +1,9 @@
 import React, { useState, useEffect, createContext } from "react";
-// useEffect roda todas as vezes que a aplicação inicializa
 import { useNavigate } from "react-router-dom";
-import api from "../services/api";
 import { toast } from 'react-toastify';
+
+import api from "../services/api";
+
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext();

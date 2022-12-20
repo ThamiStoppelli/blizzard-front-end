@@ -1,7 +1,15 @@
-import "./style.css";
 import {
-  LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer, YAxis, Legend, 
+  LineChart,
+  Line,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  YAxis,
+  Legend
 } from "recharts";
+
+import "./style.css";
 
 export default function Chart({ title, data, dataKey,dataKey2, grid }) {
 

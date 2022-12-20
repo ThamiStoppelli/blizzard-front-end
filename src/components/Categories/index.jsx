@@ -1,13 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react';
-import "./style.css"
+import { toast } from 'react-toastify';
+
 import addIcon from '../../assets/addIcon.png';
 import deleteIcon from '../../assets/trash.svg';
 import lightsIcon from '../../assets/light.svg';
-
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
-import { toast } from 'react-toastify';
-import DeleteModal from '../../components/DeleteModal';
+import DeleteModal from '../DeleteModal';
+
+import "./style.css"
 
 export default function Categories() {
 

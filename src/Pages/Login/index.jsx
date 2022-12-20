@@ -1,13 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { AuthContext } from '../../contexts/auth';
 import { useNavigate } from 'react-router-dom';
 
-import "./style.css"
 import Logo from "../../assets/Logo.png"
 import about from "../../assets/Group7.png"
-import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../components/Loading';
 import PasswordInput from '../../components/PasswordInput';
+import { AuthContext } from '../../contexts/auth';
+
+import "./style.css"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
 

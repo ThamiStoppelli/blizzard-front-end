@@ -1,18 +1,18 @@
 import React, { useState, useContext, useEffect } from 'react';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 
-import "./style.css"
 import addIcon from '../../assets/addIcon.png';
 import NavBar from "../../components/Navbar";
 import Header from '../../components/Header';
 import { AddNewDevice } from '../../components/AddNewDevice';
 import Alerts from '../../components/Alerts';
 import DeviceCard from '../../components/DeviceCard';
-
-import 'react-toastify/dist/ReactToastify.minimal.css';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
+
+import "./style.css"
+import 'react-toastify/dist/ReactToastify.minimal.css';
 
 export default function Devices() {
 

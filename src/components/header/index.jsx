@@ -1,14 +1,15 @@
-import "./style.css";
 import { useState, useContext } from "react";
+import { useNavigate } from 'react-router-dom';
+
 import userIcon from "../../assets/userIcon.svg";
 import arrowDown from "../../assets/arrowDown.png";
-import { useNavigate } from 'react-router-dom';
 import aboutSystem from "../../assets/aboutSystem.png";
 import changePassword from "../../assets/changePassword.png";
 import exit from "../../assets/exit.png";
 import { ChangePassword } from "../../components/ChangePassword";
 import { AuthContext } from "../../contexts/auth";
 
+import "./style.css";
 
 export default function Header({ title }) {
 

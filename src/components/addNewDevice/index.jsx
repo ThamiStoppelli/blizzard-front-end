@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
-import "./style.css";
-import closeIcon from '../../assets/close.png'
-
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+import closeIcon from '../../assets/close.png'
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
 
+import "./style.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const AddNewDevice = ({ onClick }) => {
 

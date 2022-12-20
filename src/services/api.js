@@ -15,8 +15,6 @@ const api = axios.create({
     //     } else return status;
     // },
 });
-    
-export default api;
 
 export const createAuth = async (email, password) => {
     return api.post("/auth/login", { email, password });
@@ -25,3 +23,5 @@ export const createAuth = async (email, password) => {
 export const listUsers = async () => {
     return api.get("/user/list");
 };
+
+export default api;

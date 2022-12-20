@@ -1,15 +1,16 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
-import "./style.css"
+import { toast } from 'react-toastify';
+
 import addIcon from '../../assets/addIcon.png';
 import locationIcon from '../../assets/locations.svg';
 import deleteIcon from '../../assets/trash.svg'
 import rightArrowIcon from '../../assets/right-arrow.svg'
-
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
-import { toast } from 'react-toastify';
-import DeleteModal from '../../components/DeleteModal';
+import DeleteModal from '../DeleteModal';
+
+import "./style.css"
 
 export default function Locations() {
 

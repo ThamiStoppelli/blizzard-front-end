@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom'
 
+import { AuthProvider, AuthContext } from "./contexts/auth";
 import Login from "./pages/Login";
 import AboutSystem from './pages/AboutSystem';
 import AboutSystemLoggedIn from './pages/AboutSystemLoggedIn';
@@ -11,10 +12,7 @@ import Dashboard from './pages/Dashboard';
 import Devices from './pages/Devices';
 import Groups from './pages/Groups';
 import Users from './pages/Users';
-
 import GroupSpaces from './pages/GroupSpaces';
-
-import { AuthProvider, AuthContext } from "./contexts/auth";
 
 const Paths = () => {
 
