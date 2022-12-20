@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import api from "../../services/api";
 
-import Chart from "../../components/chart";
-import DashboardCards from "../../components/infoCards";
+import Chart from "../../components/Chart";
+import DashboardCards from "../../components/InfoCards";
 import "./style.css";
 import { userData } from '../../dummyData'
-import Header from "../../components/header";
-import NavBar from "../../components/navbar";
-import Alerts from "../../components/alerts";
+import Header from "../../components/Header";
+import NavBar from "../../components/Navbar";
+import Alerts from "../../components/Alerts";
 import { useEffect } from "react";
 
 export default function Dashboard() {

@@ -2,10 +2,10 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 import "./style.css"
 
-import NavBar from "../../components/navbar";
-import addIcon from '../../Assets/addIcon.png';
-import Header from '../../components/header';
-import Alerts from '../../components/alerts';
+import NavBar from "../../components/Navbar";
+import addIcon from '../../assets/addIcon.png';
+import Header from '../../components/Header';
+import Alerts from '../../components/Alerts';
 
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';

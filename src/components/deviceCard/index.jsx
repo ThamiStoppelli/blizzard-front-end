@@ -3,18 +3,18 @@ import api from '../../services/api';
 import moment from 'moment';
 import "./style.css";
 import { toast } from 'react-toastify';
-import categoryIcon from '../../Assets/ac-icon.svg';
-import locationIcon from '../../Assets/locations.svg'
-import energyIcon from '../../Assets/energy.svg'
-import DotsIcon from '../../Assets/vertical-dots.svg';
-import deleteIcon from '../../Assets/trash.svg';
-import deactivateIcon from '../../Assets/deactivate.svg';
-import editIcon from '../../Assets/edit.svg'
-import arrowIcon from '../../Assets/arrow-schedule.svg'
+import categoryIcon from '../../assets/ac-icon.svg';
+import locationIcon from '../../assets/locations.svg'
+import energyIcon from '../../assets/energy.svg'
+import DotsIcon from '../../assets/vertical-dots.svg';
+import deleteIcon from '../../assets/trash.svg';
+import deactivateIcon from '../../assets/deactivate.svg';
+import editIcon from '../../assets/edit.svg'
+import arrowIcon from '../../assets/arrow-schedule.svg'
 
 import Popup from 'reactjs-popup';
 import { AuthContext } from '../../contexts/auth';
-import Switch from '../../components/toggleSwitch'
+import Switch from '../../components/ToggleSwitch'
 
 function DeviceCard({
   key, name, id, location, space,

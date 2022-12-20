@@ -1,14 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 import "./style.css"
-import addIcon from '../../Assets/addIcon.png';
-import deleteIcon from '../../Assets/trash.svg';
-import lightsIcon from '../../Assets/light.svg';
+import addIcon from '../../assets/addIcon.png';
+import deleteIcon from '../../assets/trash.svg';
+import lightsIcon from '../../assets/light.svg';
 
 import api from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
 import { toast } from 'react-toastify';
-import DeleteModal from '../../components/deleteModal';
+import DeleteModal from '../../components/DeleteModal';
 
 export default function Categories() {
 

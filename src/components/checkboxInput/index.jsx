@@ -4,8 +4,8 @@ import { AuthContext } from '../../contexts/auth';
 import api from "../../services/api";
 import { toast } from 'react-toastify';
 
-import arrowupIcon from '../../Assets/arrow-up.svg';
-import arrowdownIcon from '../../Assets/arrow-down.svg';
+import arrowupIcon from '../../assets/arrow-up.svg';
+import arrowdownIcon from '../../assets/arrow-down.svg';
 
 
 function CheckboxInput({

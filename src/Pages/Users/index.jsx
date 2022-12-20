@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./style.css"
-import { AddNewUser } from '../../components/addNewUser';
+import { AddNewUser } from '../../components/AddNewUser';
 import api, { listUsers } from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
 
@@ -9,16 +9,16 @@ import 'react-toastify/dist/ReactToastify.minimal.css';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 
-import addIcon from '../../Assets/addIcon.png';
-import NavBar from "../../components/navbar";
-import Header from '../../components/header';
-import UserRequests from '../../components/userRequests';
-import downArrowIcon from '../../Assets/down-arrow.svg';
-import upArrowIcon from '../../Assets/up-arrow.svg';
+import addIcon from '../../assets/addIcon.png';
+import NavBar from "../../components/Navbar";
+import Header from '../../components/Header';
+import UserRequests from '../../components/UserRequests';
+import downArrowIcon from '../../assets/down-arrow.svg';
+import upArrowIcon from '../../assets/up-arrow.svg';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { VisibilityPermissions } from '../../components/visibilityPermissions';
-import UserCard from '../../components/userCard';
+import { VisibilityPermissions } from '../../components/VisibilityPermissions';
+import UserCard from '../../components/UserCard';
 
 export default function Users() {
 

@@ -1,12 +1,12 @@
 import "./style.css";
 import { useState, useContext } from "react";
-import userIcon from "../../Assets/userIcon.svg";
-import arrowDown from "../../Assets/arrowDown.png";
+import userIcon from "../../assets/userIcon.svg";
+import arrowDown from "../../assets/arrowDown.png";
 import { useNavigate } from 'react-router-dom';
-import aboutSystem from "../../Assets/aboutSystem.png";
-import changePassword from "../../Assets/changePassword.png";
-import exit from "../../Assets/exit.png";
-import { ChangePassword } from "../../components/changePassword";
+import aboutSystem from "../../assets/aboutSystem.png";
+import changePassword from "../../assets/changePassword.png";
+import exit from "../../assets/exit.png";
+import { ChangePassword } from "../../components/ChangePassword";
 import { AuthContext } from "../../contexts/auth";
 
 

@@ -2,11 +2,11 @@ import React, { useState, useContext, useEffect } from 'react';
 import "./style.css";
 import api from "../../services/api";
 import { toast } from 'react-toastify';
-import userIcon from '../../Assets/userIcon.svg';
-import DotsIcon from '../../Assets/vertical-dots.svg';
-import deleteIcon from '../../Assets/trash.svg';
-import roleIcon from '../../Assets/position.svg';
-import visibilityPermisisonsIcon from '../../Assets/visibility-permissions-op.svg'
+import userIcon from '../../assets/userIcon.svg';
+import DotsIcon from '../../assets/vertical-dots.svg';
+import deleteIcon from '../../assets/trash.svg';
+import roleIcon from '../../assets/position.svg';
+import visibilityPermisisonsIcon from '../../assets/visibility-permissions-op.svg'
 
 import Popup from 'reactjs-popup';
 import { AuthContext } from '../../contexts/auth';

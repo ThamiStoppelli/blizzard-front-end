@@ -1,18 +1,18 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom'
 
-import Login from "./Pages/Login";
-import AboutSystem from './Pages/AboutSystem';
-import AboutSystemLoggedIn from './Pages/AboutSystemLoggedIn';
-import SignUp from './Pages/SignUp';
-import PasswordRecovery from './Pages/PasswordRecovery';
-import PasswordReset from './Pages/PasswordReset';
-import Dashboard from './Pages/Dashboard';
-import Devices from './Pages/Devices';
-import Groups from './Pages/Groups';
-import Users from './Pages/Users';
+import Login from "./pages/Login";
+import AboutSystem from './pages/AboutSystem';
+import AboutSystemLoggedIn from './pages/AboutSystemLoggedIn';
+import SignUp from './pages/SignUp';
+import PasswordRecovery from './pages/PasswordRecovery';
+import PasswordReset from './pages/PasswordReset';
+import Dashboard from './pages/Dashboard';
+import Devices from './pages/Devices';
+import Groups from './pages/Groups';
+import Users from './pages/Users';
 
-import GroupSpaces from './Pages/GroupSpaces';
+import GroupSpaces from './pages/GroupSpaces';
 
 import { AuthProvider, AuthContext } from "./contexts/auth";
 

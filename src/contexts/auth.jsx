@@ -3,7 +3,7 @@ import React, { useState, useEffect, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import api, { createAuth } from "../services/api";
 import { toast } from 'react-toastify';
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext();

@@ -2,13 +2,13 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
-import addIcon from '../../Assets/addIcon.png';
-import NavBar from "../../components/navbar";
-import Device from "../../components/deviceCard";
-import Header from '../../components/header';
-import { AddNewDevice } from '../../components/addNewDevice';
-import Alerts from '../../components/alerts';
-import DeviceCard from '../../components/deviceCard';
+import addIcon from '../../assets/addIcon.png';
+import NavBar from "../../components/Navbar";
+import Device from "../../components/DeviceCard";
+import Header from '../../components/Header';
+import { AddNewDevice } from '../../components/AddNewDevice';
+import Alerts from '../../components/Alerts';
+import DeviceCard from '../../components/DeviceCard';
 
 import 'react-toastify/dist/ReactToastify.minimal.css';
 import MenuItem from '@mui/material/MenuItem';

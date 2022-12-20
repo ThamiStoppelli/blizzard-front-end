@@ -1,5 +1,5 @@
-import deviceIcon from './Assets/airconditioner-icon.png';
-import userIcon from './Assets/userIcon.svg';
+import deviceIcon from './assets/airconditioner-icon.png';
+import userIcon from './assets/userIcon.svg';
 
 
 export const userData = [

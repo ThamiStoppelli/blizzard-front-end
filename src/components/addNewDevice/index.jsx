@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useContext, useEffect } from "react";
 import "./style.css";
-import closeIcon from '../../Assets/close.png'
+import closeIcon from '../../assets/close.png'
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

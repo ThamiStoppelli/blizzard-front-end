@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import showingPassword from "../../Assets/eye-open.svg";
-import hidingPassword from "../../Assets/eye-closed.svg";
+import showingPassword from "../../assets/eye-open.svg";
+import hidingPassword from "../../assets/eye-closed.svg";
 
 function PasswordInput({
   toggle, setToggle, setInput, id,

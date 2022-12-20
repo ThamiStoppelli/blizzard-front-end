@@ -1,6 +1,6 @@
 import "./style.css";
-import arrowIconDown from '../../Assets/arrowDashboard-down.png';
-import arrowIconUp from '../../Assets/arrowDashboard-up.png';
+import arrowIconDown from '../../assets/arrowDashboard-down.png';
+import arrowIconUp from '../../assets/arrowDashboard-up.png';
 
 export default function DashboardCards() {
   return (

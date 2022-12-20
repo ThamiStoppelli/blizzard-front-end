@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import api from '../../services/api'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PasswordInput from '../../components/passwordInput';
+import PasswordInput from '../../components/PasswordInput';
 
 import "./style.css"
-import Logo from "../../Assets/Logo.png"
+import Logo from "../../assets/Logo.png"
 
 export default function SignUp() {
 

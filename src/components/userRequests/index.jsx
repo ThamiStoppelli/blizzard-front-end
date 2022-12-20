@@ -2,11 +2,11 @@ import React, { useState, useContext, useEffect } from 'react';
 import "./style.css"
 import api, { listUsers } from '../../services/api';
 import { AuthContext } from '../../contexts/auth';
-import { AcceptUsers } from "../../components/acceptUsers";
+import { AcceptUsers } from "../../components/AcceptUsers";
 
-import negativeIcon from '../../Assets/negative.png';
-import positiveIcon from '../../Assets/positive.png';
-import userIcon from '../../Assets/userIcon.png';
+import negativeIcon from '../../assets/negative.png';
+import positiveIcon from '../../assets/positive.png';
+import userIcon from '../../assets/userIcon.png';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

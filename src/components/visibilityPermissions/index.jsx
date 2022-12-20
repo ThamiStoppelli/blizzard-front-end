@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import React, { useContext, useState, useEffect } from "react";
 import "./style.css";
-import closeIcon from '../../Assets/close.png'
+import closeIcon from '../../assets/close.png'
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
 
-import checkboxIcon from '../../Assets/checkbox-unselected.svg';
-import checkboxSelectedIcon from '../../Assets/checkbox-selected.svg';
-import checkboxPartiallySelectedIcon from '../../Assets/checkbox-partially-selected.svg';
-import CheckboxInput from "../checkboxInput";
+import checkboxIcon from '../../assets/checkbox-unselected.svg';
+import checkboxSelectedIcon from '../../assets/checkbox-selected.svg';
+import checkboxPartiallySelectedIcon from '../../assets/checkbox-partially-selected.svg';
+import CheckboxInput from "../CheckboxInput";
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

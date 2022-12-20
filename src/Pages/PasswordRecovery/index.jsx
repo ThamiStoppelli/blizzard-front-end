@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../../services/api'
 
-import feedbacks from '../../components/feedbacks';
+import feedbacks from '../../components/Feedbacks';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import "./style.css"
-import Logo from "../../Assets/Logo.png"
-import Loading from '../../components/loading';
+import Logo from "../../assets/Logo.png"
+import Loading from '../../components/Loading';
 
 
 export default function PasswordRecovery() {

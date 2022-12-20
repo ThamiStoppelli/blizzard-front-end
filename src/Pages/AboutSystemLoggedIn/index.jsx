@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
-import Logo from "../../Assets/Logo.png"
-import VortexLogo from "../../Assets/VortexLogo.png" 
-import DtechLogo from "../../Assets/DtecLogo.png"
+import Logo from "../../assets/Logo.png"
+import VortexLogo from "../../assets/VortexLogo.png" 
+import DtechLogo from "../../assets/DtecLogo.png"
 
 
 export default function AboutSystemLoggedIn() {

@@ -2,15 +2,15 @@ import { useState, useContext, useEffect } from "react";
 import "./style.css";
 import api from "../../services/api";
 import { AuthContext } from '../../contexts/auth';
-import Loading from '../../components/loading';
+import Loading from '../../components/Loading';
 
-import closeIcon from '../../Assets/close.png';
-import radioButton from '../../Assets/radio.png';
-import radioButtonChecked from '../../Assets/radio-checked.png';
-import rightArrowIcon from '../../Assets/right-arrow.svg';
+import closeIcon from '../../assets/close.png';
+import radioButton from '../../assets/radio.png';
+import radioButtonChecked from '../../assets/radio-checked.png';
+import rightArrowIcon from '../../assets/right-arrow.svg';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { VisibilityPermissions } from "../visibilityPermissions";
+import { VisibilityPermissions } from "../VisibilityPermissions";
 
 
 export const AddNewUser = ({ onClick }) => {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
 
-import feedbackImg from '../../Assets/feedbackImg.svg';
-import closeImg from '../../Assets/close.svg';
+import feedbackImg from '../../assets/feedbackImg.svg';
+import closeImg from '../../assets/close.svg';
 
 // export default function Feedback = (props) => {
 

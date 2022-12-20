@@ -3,14 +3,14 @@ import { AuthContext } from '../../contexts/auth';
 import { useNavigate } from 'react-router-dom';
 
 import "./style.css"
-import Logo from "../../Assets/Logo.png"
-import about from "../../Assets/Group7.png"
-import ClosedEyeIcon from "../../Assets/eye-closed.svg"
-import EyeIcon from "../../Assets/eye-open.svg"
+import Logo from "../../assets/Logo.png"
+import about from "../../assets/Group7.png"
+import ClosedEyeIcon from "../../assets/eye-closed.svg"
+import EyeIcon from "../../assets/eye-open.svg"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Loading from '../../components/loading';
-import PasswordInput from '../../components/passwordInput';
+import Loading from '../../components/Loading';
+import PasswordInput from '../../components/PasswordInput';
 
 export default function Login() {
 
